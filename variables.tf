@@ -1,3 +1,8 @@
+variable "aws_region" {
+  description = "aws region"
+  type        = string
+  default     = "ap-south-1"
+}
 
 variable "bucket_name" {
   description = "The name of the S3 bucket to create"
