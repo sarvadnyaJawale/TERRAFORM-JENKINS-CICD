@@ -48,6 +48,7 @@ resource "aws_instance" "Ajay" {
 resource "aws_security_group" "ec2_security_group" {
   name        = "ec2 security group"
   description = "allow access on ports 80 and 22 and 443"
+  vpc_id      =  aws_vpc.my_vpc.id
 
   ingress {
     description      = "ssh access"
