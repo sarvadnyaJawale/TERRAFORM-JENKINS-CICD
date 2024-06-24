@@ -46,6 +46,7 @@ resource "aws_instance" "Ajay" {
   ami                    = "ami-0f58b397bc5c1f2e8"
   instance_type          = "t2.medium"
   key_name               = "sarva"
+  subnet_id      = aws_subnet.my_subnet.id 
   vpc_security_group_ids = [aws_security_group.ec2_security_group.id]
   user_data              = base64encode(file("website.sh"))
   tags = {
