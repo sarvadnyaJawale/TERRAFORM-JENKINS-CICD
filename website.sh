@@ -12,4 +12,3 @@ sudo systemctl enable docker
 
 # Pull and run a simple Nginx web server container
 sudo docker run -d --name zomato -p 3000:3000 sarvadnya/zomato:latest
-sudo docker run -d --name netflix -p 8081:80 sarvadnya/netflix:latest
